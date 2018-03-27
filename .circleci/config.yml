@@ -6,6 +6,7 @@ version: 2
 jobs:
   build:
     machine: true
+    working_directory: /html/
     steps:
       - checkout
       - run:
@@ -18,10 +19,12 @@ jobs:
           command: docker-compose up --build -d
       - run:
           name: Print folder content
-          command: ls -a
+          command: ls -a /html
       - run:
           name: PHP version
-          command: php -v
+          command: |
+            docker exec
+            php -v
       - run:
           name: Docker containers
           command: docker container ls
