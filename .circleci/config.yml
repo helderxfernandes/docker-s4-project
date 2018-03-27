@@ -20,6 +20,12 @@ jobs:
           name: Print folder content
           command: ls -a html
       - run:
+          name: PHP version
+          command: |
+            docker exec -it project_php bash
+            php -v
+            exit
+      - run:
           name: Docker containers
           command: docker container ls
 
