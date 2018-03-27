@@ -22,8 +22,7 @@ jobs:
           command: |
             docker images
             docker container ls
-      #run tests!
       - run:
-        name: Verify if docker container are responding via HTTP
-        command: |
-          curl --retry 10 --retry-delay 5 -v http://localhost:8000
+          name: Verify if docker container are responding via HTTP
+          command: |
+            curl --retry 10 --retry-delay 5 -v http://localhost:8000
