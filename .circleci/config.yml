@@ -8,9 +8,9 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run:
-          name: Print folder content
-          command: ls -a /var/www/html/
+      #- run:
+      #    name: Print folder content
+      #    command: ls -a /var/www/html/
       - run:
           name: Check Docker and Docker-compose versions
           command: |
