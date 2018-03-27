@@ -18,12 +18,7 @@ jobs:
           command: docker-compose up --build -d
       - run:
           name: Print folder content
-          command: ls -a /html
-      - run:
-          name: PHP version
-          command: |
-            docker exec
-            php -v
+          command: ls -a html
       - run:
           name: Docker containers
           command: docker container ls
