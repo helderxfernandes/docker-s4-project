@@ -12,7 +12,7 @@ jobs:
           APP_ENV: test
       #- image: circleci/postgres:9.4.12-alpine
 
-    working_directory: /var/www/html/html/
+    working_directory: /var/www/html/
 
     notify:
       webhooks:
@@ -28,13 +28,15 @@ jobs:
           - v1-dependencies-{{ checksum "composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
       - run:
           name: Install system packages
           command: apt-get update && apt-get -y install git
       - run:
           name: Install PHP extensions
           command: docker-php-ext-install pdo
+      - run:
+          name: Print folder content
+          command: cd /var/www/html/ ls -l
       - checkout
       - run:
           name: Install Composer
