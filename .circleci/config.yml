@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Install system packages
           command: apt-get update && apt-get -y install git
-      - run: 
+      - run:
           name: Install PHP extensions
           command: docker-php-ext-install pdo
       - checkout
@@ -57,5 +57,5 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
 
-      # run tests!
+      #run tests!
       #- run: phpunit
