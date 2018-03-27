@@ -36,7 +36,7 @@ jobs:
           command: docker-php-ext-install pdo
       - run:
           name: Print folder content
-          command: cd /var/www/html/ ls -l
+          command: ls -a /var/www/html/
       - checkout
       - run:
           name: Install Composer
