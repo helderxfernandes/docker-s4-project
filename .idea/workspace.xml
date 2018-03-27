@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -134,12 +134,12 @@
       <updated>1522075608542</updated>
       <workItem from="1522075609691" duration="1545000" />
       <workItem from="1522078350829" duration="2541000" />
-      <workItem from="1522139089105" duration="13245000" />
+      <workItem from="1522139089105" duration="13475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17331000" />
+    <option name="totallyTimeSpent" value="17561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-467" y="-1417" width="1153" height="1417" extended-state="0" />
@@ -322,7 +322,7 @@
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding />
         </state>
       </provider>

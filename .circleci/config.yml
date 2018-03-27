@@ -22,7 +22,7 @@ jobs:
       - run:
           name: PHP version
           command: |
-            docker exec -it project_php bash
+            docker exec -it project_php_1 bash
             php -v
             exit
       - run:
