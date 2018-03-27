@@ -7,6 +7,7 @@ jobs:
   build:
     machine: true
     steps:
+      #check out code from githhub
       - checkout
       - run:
           name: Check Docker and Docker-compose versions
@@ -17,17 +18,9 @@ jobs:
           name: Run Docker
           command: docker-compose up --build -d
       - run:
-          name: Print folder content
-          command: ls -a html
-      - run:
-          name: PHP version
+          name: Check if Docker is running
           command: |
-            docker exec -it project_php_1 bash
-            php -v
-            exit
-      - run:
-          name: Docker containers
-          command: docker container ls
-
+            docker images
+            docker container ls
       #run tests!
       #- run: phpunit
