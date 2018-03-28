@@ -107,20 +107,20 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // app_test_number
+        // hello_page
         if ('' === $trimmedPathinfo) {
-            $ret = array (  '_controller' => 'App\\Controller\\TestController::number',  '_route' => 'app_test_number',);
+            $ret = array (  'template' => 'hello_page.html.twig',  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction',  '_route' => 'hello_page',);
             if ('/' === substr($pathinfo, -1)) {
                 // no-op
             } elseif ('GET' !== $canonicalMethod) {
-                goto not_app_test_number;
+                goto not_hello_page;
             } else {
-                return array_replace($ret, $this->redirect($rawPathinfo.'/', 'app_test_number'));
+                return array_replace($ret, $this->redirect($rawPathinfo.'/', 'hello_page'));
             }
 
             return $ret;
         }
-        not_app_test_number:
+        not_hello_page:
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }

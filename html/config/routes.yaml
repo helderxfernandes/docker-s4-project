@@ -3,6 +3,8 @@
 #    controller: App\Controller\DefaultController::index
 
 
-app_test_number:
-    path: /
-    controller: App\Controller\TestController::number
+hello_page:
+  path: /
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+  defaults:
+    template: 'hello_page.html.twig'
