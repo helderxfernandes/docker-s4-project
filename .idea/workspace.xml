@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3a30f1f-a1fe-464b-bedb-33cb35bd6f8e" name="Default" comment="" />
+    <list default="true" id="ae43ad2f-dcad-4ebf-9296-595fc756cae9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/final-test.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,23 +16,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/html/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Dockerfile">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -33,32 +33,13 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/index.php" />
-        <option value="$PROJECT_DIR$/html/public/index.php" />
-        <option value="$PROJECT_DIR$/html/composer.json" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/mysql/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/php/php.ini" />
-        <option value="$PROJECT_DIR$/php/hosts" />
-        <option value="$PROJECT_DIR$/php/yourhost.com.conf" />
-        <option value="$PROJECT_DIR$/php/Dockerfile" />
-        <option value="$PROJECT_DIR$/php/localhost.conf" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -68,14 +49,107 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/html/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/html/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/html/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/html/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/html/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/html/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/html/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/html/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/html/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/html/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/html/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/html/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/html/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/html/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/html/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/html/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/html/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/html/vendor/composer" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/html/vendor/bin/.phpunit" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/html/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/html/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/html/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/html/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/html/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/webpack-encore-pack" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/html/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/html/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/html/vendor/symfony/config" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-467" />
     <option name="y" value="-1417" />
     <option name="width" value="1153" />
     <option name="height" value="1417" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -91,36 +165,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="final-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final-test" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="final-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final-test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name=".circleci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -142,42 +205,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3a30f1f-a1fe-464b-bedb-33cb35bd6f8e" name="Default" comment="" />
-      <created>1522075608542</created>
+      <changelist id="ae43ad2f-dcad-4ebf-9296-595fc756cae9" name="Default" comment="" />
+      <created>1522227898627</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1522075608542</updated>
-      <workItem from="1522075609691" duration="1545000" />
-      <workItem from="1522078350829" duration="2541000" />
-      <workItem from="1522139089105" duration="15488000" />
+      <updated>1522227898627</updated>
+      <workItem from="1522227900539" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19574000" />
+    <option name="totallyTimeSpent" value="227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-467" y="-1417" width="1153" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978317" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.50303555" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.49696445" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,153 +252,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/localhost.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php" />
-    <entry file="file://$PROJECT_DIR$/html/public/index.php" />
-    <entry file="file://$PROJECT_DIR$/html/composer.json" />
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/my.cnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/localhost.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/assets/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding />
         </state>
       </provider>
