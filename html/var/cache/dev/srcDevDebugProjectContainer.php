@@ -16,6 +16,6 @@ if (!\class_exists(srcDevDebugProjectContainer::class, false)) {
 
 return new \ContainerNPnxkff\srcDevDebugProjectContainer(array(
     'container.build_hash' => 'NPnxkff',
-    'container.build_id' => 'c501dc98',
-    'container.build_time' => 1522229098,
+    'container.build_id' => '3a0e4fe6',
+    'container.build_time' => 1522246990,
 ));
