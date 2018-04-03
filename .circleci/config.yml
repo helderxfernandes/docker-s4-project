@@ -10,6 +10,9 @@ jobs:
       #check out code from githhub
       - checkout
       - run:
+          name: Install aws cli
+          command: pip install --upgrade awscli
+      - run:
           name: Check Docker and Docker-compose versions
           command: |
             docker -v
@@ -26,3 +29,13 @@ jobs:
           name: Verify if application is responding via HTTP
           command: |
             curl http://localhost:8000
+    test:
+      override:
+        - ufo docker build
+        - docker tag $(ufo docker image_name) hi_web
+
+    deployment:
+      staging:
+        branch: master
+        commands:
+          - ufo ship hi-web --cluster stag --no-docker
