@@ -19,7 +19,11 @@ e6e5d7,172.21.0.1,GET,http://localhost:8000/,1522229206,445d69,200
 fcda07,172.21.0.1,GET,http://localhost:8000/,1522229414,,200
 d86387,172.21.0.1,GET,http://localhost:8000/,1522229432,,200
 6730cd,172.21.0.1,GET,http://localhost:8000/,1522229442,,200
+<<<<<<< HEAD
 ae7cfb,172.21.0.1,GET,http://localhost:8000/,1522244206,,200
 cd9c1a,172.21.0.1,GET,http://localhost:8000/,1522244604,,200
 133c12,172.21.0.1,GET,http://localhost:8000/,1522244642,,200
 c69614,172.21.0.1,GET,http://localhost:8000/,1522244650,,200
+=======
+c5ccb8,172.22.0.1,GET,http://localhost:8000/,1522247009,,200
+>>>>>>> d817a9187de6b305a079d8a7bd9d1581cf10baa9

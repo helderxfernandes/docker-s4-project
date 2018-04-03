@@ -3,3 +3,5 @@
 
 #PphStorm
 .idea/*
+vendor/*
+var/*
