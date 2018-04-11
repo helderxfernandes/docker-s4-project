@@ -1,0 +1,9 @@
+branch-defaults:
+  master:
+    environment: master-docker-s4-project
+global:
+  application_name: DeployFirstTest
+  default_ec2_keyname: XXXXXX
+  default_platform: Multi-container Docker 1.12.6 (Generic)
+  default_region: eu-west-1
+  sc: git
