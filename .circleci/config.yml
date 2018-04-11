@@ -15,9 +15,6 @@ jobs:
           name: Docker info
           command: docker info
       - run:
-          name: Install AWS CLI
-          command: sudo pip install awsebcli --upgrade
-      - run:
           name: Run Docker
           command: docker-compose up --build -d
       - run:
@@ -30,17 +27,16 @@ jobs:
           command: |
             curl http://localhost:8000
 
-      - run:
-          name: Deploying
-          command: eb deploy master-docker-s4-project
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - deploy:
-        filters:
-          branches:
-            only:
-              - staging
-              - master
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      appname-1234:
+        application_root: /
+        region: us-east-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: my-bucket
+            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: my-deployment-group
