@@ -13,10 +13,7 @@ jobs:
       - checkout
       - run:
           name: AWS EB CLI install
-          command: |
-            sudo apt-get install python-dev
-            sudo easy_install --upgrade six
-            sudo pip install awsebcli
+          command: sudo -H pip install awsebcli --upgrade --ignore-installed
 
       - run:
           name: Docker info
