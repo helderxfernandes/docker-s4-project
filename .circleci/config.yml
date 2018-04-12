@@ -37,6 +37,6 @@ deployment:
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: my-bucket
+            bucket: my-bucket-circleci
             key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
         deployment_group: my-deployment-group
