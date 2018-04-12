@@ -14,8 +14,9 @@ jobs:
       - run:
           name: AWS EB CLI install
           command: |
-            sudo apt-get install libyaml-dev libpython2.7-dev
-            sudo pip install 'awsebcli==3.7.4' --force-reinstall
+            sudo apt-get install python-dev
+            sudo easy_install --upgrade six
+            sudo pip install awsebcli
 
       - run:
           name: Docker info
