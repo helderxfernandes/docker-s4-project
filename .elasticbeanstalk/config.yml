@@ -4,7 +4,7 @@ branch-defaults:
 global:
   application_name: docker-s4-project
   default_ec2_keyname: ec2-key-pair-name
-  default_platform: 64bit Amazon Linux 2015.03 v1.4.3 running Ruby 2.2 (Puma)
-  default_region: sa-east-1
+  default_platform: multi-container-docker-1.3.3-(generic)
+  default_region: eu-central-1
   profile: eb-cli
   sc: git
