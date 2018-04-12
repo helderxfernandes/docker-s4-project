@@ -12,10 +12,6 @@ jobs:
       #check out code from githhub
       - checkout
       - run:
-          name: AWS EB CLI install
-          command: sudo -H pip install awsebcli --upgrade --ignore-installed
-
-      - run:
           name: Docker info
           command: docker info
       - run:
@@ -30,7 +26,9 @@ jobs:
           name: Verify if application is responding via HTTP
           command: |
             curl http://localhost:8000
-
+dependencies:
+  pre:
+    - pip install awsebcli
 deployment:
   production:
     branch: master
