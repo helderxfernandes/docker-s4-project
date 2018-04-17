@@ -31,4 +31,3 @@ jobs:
           command: |
             curl http://localhost:8000
 
-  
