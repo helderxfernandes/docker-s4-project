@@ -33,9 +33,9 @@ jobs:
 
   #The deploy job
   deploy:
-    working_directory:
-    docker:
-      - image: php:7.2-apache
+    machine:
+      services:
+        - docker
     steps:
         #check out code from githhub
         - checkout
