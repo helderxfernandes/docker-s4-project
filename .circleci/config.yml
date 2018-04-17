@@ -48,7 +48,7 @@ jobs:
           command: docker info
       - run:
           name: Run Docker
-          command: docker-compose up --build -d
+          command: docker-compose up
       - run:
           name: Create AWS credentials manually
           command: |
