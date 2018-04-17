@@ -1,12 +1,19 @@
 {
   "AWSEBDockerrunVersion": "1",
-  "Image": {
-    "Name": "demo/image",
-    "Update": "true"
-  },
   "Ports": [
     {
-      "ContainerPort": "3000"
+      "ContainerPort": "80"
     }
-  ]
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/uploads",
+      "ContainerDirectory": "/var/www/html/uploads"
+    },
+    {
+      "HostDirectory": "/session",
+      "ContainerDirectory": "/var/www/html/session"
+    }
+  ],
+  "Logging": "/var/log/apache2/"
 }
