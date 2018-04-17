@@ -8,14 +8,15 @@ services:
       restart: always
       volumes:
          - ./html/:/var/www/html
-      depends_on:
-        - db
-   db:
-     build: ./mysql
-     volumes:
-       - db_data:/var/lib/mysql
-     environment:
-       MYSQL_ROOT_PASSWORD: root
+#     depends_on:
+#        - db
 
-volumes:
-    db_data:
+#   db:
+#     build: ./mysql
+#     volumes:
+#       - db_data:/var/lib/mysql
+#     environment:
+#       MYSQL_ROOT_PASSWORD: root
+
+#volumes:
+#    db_data:
