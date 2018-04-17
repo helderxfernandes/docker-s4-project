@@ -47,8 +47,10 @@ jobs:
           name: Docker info
           command: docker info
       - run:
-          name: Run Docker
-          command: docker-compose up
+          name: Check if Docker is running
+          command: |
+            docker images
+            docker container ls
       - run:
           name: Create AWS credentials manually
           command: |
