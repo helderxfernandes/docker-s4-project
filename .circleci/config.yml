@@ -47,9 +47,10 @@ jobs:
         - run:
           name: Installing python-pip and aws cli
           command: |
-            apt-get -y -qq update
-            apt-get install python-pip python-dev build-essential
-            pip install awsebcli --upgrade
+            apt-get install -y sudo
+            sudo apt-get -y -qq update
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install awsebcli --upgrade
         - run:
           name: Deploying on AWS EB
           command: eb deploy
