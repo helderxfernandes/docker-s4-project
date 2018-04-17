@@ -32,8 +32,9 @@ jobs:
             curl http://localhost:8000
 
   deploy:
-    docker:
-      - image: circleci/php:7.2-apache
+    machine:
+      services:
+        - docker
     steps:
       - checkout
       - run:
@@ -42,6 +43,9 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y python-pip python-dev
             sudo pip install awsebcli --upgrade
+      - run:
+          name: Run Docker
+          command: docker-compose up --build -d
       - run:
           name: Create AWS credentials manually
           command: |
