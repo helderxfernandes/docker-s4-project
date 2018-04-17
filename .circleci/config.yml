@@ -43,17 +43,6 @@ jobs:
         - run:
           name: Show current branch
           command: echo ${CIRCLE_BRANCH}
-        # Install AWS Cli
-        - run:
-          name: Installing sudo on docker
-          command: apt-get install -y sudo
-        # Install AWS Cli
-        - run:
-          name: Installing python-pip and aws cli
-          command: |
-            sudo apt-get -y -qq update
-            sudo apt-get install python-pip python-dev build-essential
-            sudo pip install awsebcli --upgrade
         - run:
           name: Deploying on AWS EB
           command: eb deploy
