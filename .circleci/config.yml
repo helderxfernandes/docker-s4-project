@@ -11,6 +11,10 @@ jobs:
     steps:
       #check out code from githhub
       - checkout
+      # Log the current branch
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
       - run:
           name: Docker info
           command: docker info
@@ -26,11 +30,39 @@ jobs:
           name: Verify if application is responding via HTTP
           command: |
             curl http://localhost:8000
-dependencies:
-  pre:
-    - pip install awsebcli
-deployment:
-  production:
-    branch: master
-    commands:
-      - eb deploy --profile default
+
+#The deploy job
+deploy:
+  working_directory:
+  docker:
+    - image: php:7.2-apache
+  steps:
+      #check out code from githhub
+      - checkout
+      # Log the current branch
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      # Install AWS Cli
+      - run:
+        name: Installing python-pip and aws cli
+        command: |
+          sudo apt-get -y -qq update
+          sudo apt-get install python-pip python-dev build-essential
+          sudo pip install awsebcli --upgrade
+      - run:
+          name: Deploying on AWS EB
+          command: eb deploy
+
+workflows:
+  version: 2
+  # The build and deploy workflow
+  build_and_deploy:
+    jobs:
+      -build
+      - deploy:
+        requires:
+          -build
+        filters:
+          branches:
+            only: master
