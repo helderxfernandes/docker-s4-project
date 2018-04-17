@@ -1,0 +1,54 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "essential": true,
+      "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/laradock/php-fpm:latest",
+      "memory": 256,
+      "mountPoints": [
+        {
+          "containerPath": "/var/www",
+          "sourceVolume": "application"
+        },
+        {
+          "containerPath": "/usr/local/var/log",
+          "sourceVolume": "awseb-logs-php-fpm"
+        }
+      ],
+      "name": "php-fpm"
+    },
+    {
+      "essential": true,
+      "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/laradock/nginx:latest",
+      "links": [
+        "php-fpm"
+      ],
+      "memory": 512,
+      "mountPoints": [
+        {
+          "containerPath": "/var/www",
+          "sourceVolume": "application"
+        },
+        {
+          "containerPath": "/var/log/nginx",
+          "sourceVolume": "awseb-logs-nginx"
+        }
+      ],
+      "name": "nginx",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ]
+    }
+  ],
+  "volumes": [
+    {
+      "host": {
+        "sourcePath": "/var/app/current/application"
+      },
+      "name": "application"
+    }
+  ]
+}
