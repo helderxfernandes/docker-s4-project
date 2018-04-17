@@ -45,9 +45,12 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
         # Install AWS Cli
         - run:
+          name: Installing sudo on docker
+          command: apt-get install -y sudo
+        # Install AWS Cli
+        - run:
           name: Installing python-pip and aws cli
           command: |
-            apt-get install -y sudo
             sudo apt-get -y -qq update
             sudo apt-get install python-pip python-dev build-essential
             sudo pip install awsebcli --upgrade
