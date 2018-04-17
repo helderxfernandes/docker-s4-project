@@ -37,9 +37,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run Docker
-          command: docker-compose up --build -d
-      - run:
           name: Install awscli
           command: |
             sudo apt-get update
