@@ -53,16 +53,3 @@ deploy:
       - run:
           name: Deploying on AWS EB
           command: eb deploy
-
-workflows:
-  version: 2
-  # The build and deploy workflow
-  build_and_deploy:
-    jobs:
-      -build
-      - deploy:
-        requires:
-          -build
-        filters:
-          branches:
-            only: master

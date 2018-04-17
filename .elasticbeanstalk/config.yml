@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: docker-s4-project
+    environment: Demo-env-2
 global:
   application_name: demo
   default_ec2_keyname: ec2-key-pair-name
