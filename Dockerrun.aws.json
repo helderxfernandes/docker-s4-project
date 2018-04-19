@@ -1,0 +1,18 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "php",
+      "host": {
+        "sourcePath": "/var/www/html"
+      }
+    }
+  ],
+  "containerDefinitions": [
+
+    {
+      "name": "php"
+    }
+
+  ]
+}

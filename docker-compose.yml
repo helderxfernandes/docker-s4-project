@@ -2,21 +2,7 @@ version: '2'
 
 services:
    php:
+      working_dir: /var/www/html
       build: ./php
-      ports:
-        - '8000:80'
-      restart: always
       volumes:
          - ./html/:/var/www/html
-#     depends_on:
-#        - db
-
-#   db:
-#     build: ./mysql
-#     volumes:
-#       - db_data:/var/lib/mysql
-#     environment:
-#       MYSQL_ROOT_PASSWORD: root
-
-#volumes:
-#    db_data:
