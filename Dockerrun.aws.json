@@ -3,6 +3,7 @@
   "volumes": [
     {
       "name": "php",
+      "image": "php:7.2-apache"
       "host": {
         "sourcePath": "/var/www/html"
       }
