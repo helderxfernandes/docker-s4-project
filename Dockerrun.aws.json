@@ -11,7 +11,12 @@
   "containerDefinitions": [
 
     {
-      "name": "php"
+      "name": "php",
+      "mountPoints": [
+        {
+          "sourceVolume": "php",
+          "containerPath": "/var/www/html"
+        }
     }
 
   ]
