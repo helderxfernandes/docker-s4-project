@@ -1,5 +1,5 @@
-FROM php:7.2-apache
-MAINTAINER HelderFernandes @internations
+#FROM php:7.2-apache
+#MAINTAINER HelderFernandes @internations
 
 COPY php.ini /usr/local/etc/php/
 RUN apt-get update \
