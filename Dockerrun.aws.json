@@ -17,6 +17,7 @@
           "sourceVolume": "php",
           "containerPath": "/var/www/html"
         }
+      ]
     }
 
   ]
