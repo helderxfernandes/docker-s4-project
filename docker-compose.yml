@@ -2,7 +2,6 @@ version: '2'
 
 services:
    php:
-      image: "php:7.2-apache"
       working_dir: /var/www/html
       build: ./php
       dockerfile: php/Dockerfile

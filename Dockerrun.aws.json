@@ -1,9 +1,8 @@
 {
-  "AWSEBDockerrunVersion": 1,
+  "AWSEBDockerrunVersion": 2,
   "volumes": [
     {
       "name": "php",
-      "image": "php:7.2-apache",
       "host": {
         "sourcePath": "/var/www/html"
       }
@@ -13,7 +12,6 @@
 
     {
       "name": "php",
-      "image": "php:7.2-apache",
       "mountPoints": [
         {
           "sourceVolume": "php",
