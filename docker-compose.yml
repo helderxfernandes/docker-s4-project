@@ -1,26 +1,8 @@
 version: '2'
+
 services:
-
-  app-api:
-    image: "node:latest"
-    working_dir: /usr/src/app
-    command: ./run-dev.sh
-    volumes:
-     - ./api:/usr/src/app
-
-  app-ui:
-    image: "node:latest"
-    working_dir: /usr/src/app
-    command: ./run-dev.sh
-    volumes:
-     - ./ui:/usr/src/app
-
-  nginx:
-    image: nginx
-    ports:
-     - "80:80"
-    volumes:
-     - ./proxy/conf.d:/etc/nginx/conf.d
-    depends_on:
-     - app-ui
-     - app-api
+   php:
+      working_dir: /var/www/html
+      build: ./php
+      volumes:
+         - ./html/:/var/www/html
