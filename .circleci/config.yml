@@ -57,6 +57,17 @@ jobs:
           command: |
             eb use Demo-env --profile eb-cli
             eb deploy -v --profile eb-cli
+      - run:
+          name: Docker info
+          command: docker info
+      - run:
+          name: Run Docker
+          command: docker-compose up --build -d
+      - run:
+          name: Check if Docker is running
+          command: |
+            docker images
+            docker container ls
 workflows:
   version: 2
   build-deploy:
