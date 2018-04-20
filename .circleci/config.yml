@@ -5,9 +5,11 @@
 version: 2
 jobs:
   build:
-    machine:
-      services:
-        - docker
+#    machine:
+#      services:
+#        - docker
+    docker:
+      - image: circleci/php:7.2-apache
     steps:
       #check out code from githhub
       - checkout
@@ -32,9 +34,11 @@ jobs:
             curl http://localhost:8000
 
   deploy:
-    machine:
-      services:
-        - docker
+#    machine:
+#      services:
+#        - docker
+    docker:
+      - image: circleci/php:7.2-apache
     steps:
       - checkout
       - run:
