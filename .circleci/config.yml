@@ -44,32 +44,8 @@ jobs:
             sudo apt-get install -y python-pip python-dev
             sudo pip install awsebcli --upgrade
       - run:
-          name: Create AWS credentials manually
-          command: |
-            mkdir ~/.aws
-            touch ~/.aws/config
-            chmod 600 ~/.aws/config
-            echo "[profile eb-cli]" > ~/.aws/config
-            echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" >> ~/.aws/config
-            echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" >> ~/.aws/config
-      - run:
-          name: Docker info
-          command: docker info
-      - run:
-          name: Run Docker
-          command: docker-compose up --build -d
-      - run:
-          name: Check if Docker is running
-          command: |
-            docker images
-            docker container ls
-      - run:
           name: Deploy to EB if branch is Master
-          command: |
-            eb use Demo-env --profile eb-cli
-            eb health --profile eb-cli
-            eb logs --all
-            eb deploy -v --profile eb-cli
+          command: eb deploy Demo-env -v --profile default
 workflows:
   version: 2
   build-deploy:
