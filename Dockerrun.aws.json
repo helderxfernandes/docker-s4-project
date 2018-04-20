@@ -9,7 +9,6 @@
     }
   ],
   "containerDefinitions": [
-
     {
       "name": "php",
       "mountPoints": [
@@ -19,5 +18,5 @@
         }
       ]
     }
-
   ]
+}
