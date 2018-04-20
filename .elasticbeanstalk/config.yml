@@ -1,10 +1,10 @@
 branch-defaults:
   master:
-    environment: Demo-env-2
+    environment: Demo-env-1
 global:
   application_name: demo
   default_ec2_keyname: null
-  default_platform: Docker 1.12.6
+  default_platform: Multicontainer Docker 17.12 version 2.9.2
   default_region: us-east-1
   profile: eb-cli
   sc: git
