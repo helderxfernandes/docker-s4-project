@@ -28,7 +28,6 @@ jobs:
           name: Verify if application is responding via HTTP
           command: |
             curl http://localhost:8000
-
   deploy:
     machine:
       services:
@@ -52,10 +51,10 @@ workflows:
     jobs:
       - build
       - deploy:
-         requires:
-           - build
-          filters:
-            branches:
-              only:
-                - master
+        requires:
+          - build
+        filters:
+          branches:
+            only:
+              - master
 #                - develop
