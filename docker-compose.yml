@@ -4,6 +4,6 @@ services:
    php:
       working_dir: /var/www/html
       build: ./php
-      dockerfile: php/Dockerfile
+      #dockerfile: php/Dockerfile
       volumes:
          - ./html/:/var/www/html
