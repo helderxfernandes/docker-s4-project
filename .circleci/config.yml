@@ -3,31 +3,31 @@
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
 version: 2
-jobs:
-  build:
-    machine:
-      services:
-        - docker
-    steps:
-      - checkout
-      - run:
-          name: Show current branch
-          command: echo ${CIRCLE_BRANCH}
-      - run:
-          name: Docker info
-          command: docker info
-      - run:
-          name: Run Docker
-          command: docker-compose up --build -d
-      - run:
-          name: Check if Docker is running
-          command: |
-            docker images
-            docker container ls
-      - run:
-          name: Verify if application is responding via HTTP
-          command: |
-            curl http://localhost:8000
+  jobs:
+    build:
+      machine:
+        services:
+          - docker
+      steps:
+        - checkout
+        - run:
+            name: Show current branch
+            command: echo ${CIRCLE_BRANCH}
+        - run:
+            name: Docker info
+            command: docker info
+        - run:
+            name: Run Docker
+            command: docker-compose up --build -d
+        - run:
+            name: Check if Docker is running
+            command: |
+              docker images
+              docker container ls
+        - run:
+            name: Verify if application is responding via HTTP
+            command: |
+              curl http://localhost:8000
   deploy:
     machine:
       services:
