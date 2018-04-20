@@ -49,9 +49,7 @@ jobs:
             sudo pip install awsebcli --upgrade
       - run:
           name: Deploy to EB if branch is Master
-          command: |
-            eb use Demo-env-1
-            eb deploy -v
+          command: eb deploy Demo-env-1
 workflows:
   version: 2
   build-deploy:
