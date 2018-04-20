@@ -9,9 +9,7 @@ jobs:
       services:
         - docker
     steps:
-      #check out code from githhub
       - checkout
-      # Log the current branch
       - run:
           name: Show current branch
           command: echo ${CIRCLE_BRANCH}
