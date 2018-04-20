@@ -67,6 +67,8 @@ jobs:
           name: Deploy to EB if branch is Master
           command: |
             eb use Demo-env --profile eb-cli
+            eb health --profile eb-cli
+            eb logs --all
             eb deploy -v --profile eb-cli
 workflows:
   version: 2
@@ -78,4 +80,4 @@ workflows:
             branches:
               only:
                 - master
-                - develop
+#                - develop
