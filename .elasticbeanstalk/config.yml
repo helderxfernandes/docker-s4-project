@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: Demo-env-1
+    environment: Demo-env
 global:
   application_name: demo
   default_ec2_keyname: null
