@@ -4,17 +4,26 @@
     {
       "name": "php",
       "host": {
-        "sourcePath": "/var/www/html"
+        "sourcePath": "/var/app/current/html"
       }
     }
   ],
   "containerDefinitions": [
     {
       "name": "php",
+      "image": "php:7.2-apache",
+      "essential": true,
+      "memory": 128,
       "mountPoints": [
         {
           "sourceVolume": "php",
           "containerPath": "/var/www/html"
+        }
+      ],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
         }
       ]
     }
