@@ -38,7 +38,7 @@ jobs:
 #            docker push internations/test:$TAG
 #            docker login -u $DOCKER_USER -p $DOCKER_PASS
 #            docker build -t internations/test:$TAG ./php/
-#            cd ~/.docker
+#            cd ~/.docker 
 #            cat config.json
 
   deploy:
