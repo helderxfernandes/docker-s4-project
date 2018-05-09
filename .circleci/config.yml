@@ -39,7 +39,7 @@ jobs:
 #            docker login -u $DOCKER_USER -p $DOCKER_PASS
 #            docker build -t internations/test:$TAG ./php/
 #            cd ~/.docker
-#            cat config.json 
+#            cat config.json
 
   deploy:
     machine:
@@ -63,9 +63,9 @@ workflows:
   build-deploy:
     jobs:
       - build
-      - deploy:
-          filters:
-            branches:
-              only:
-                - master
+#      - deploy:
+#          filters:
+#            branches:
+#              only:
+#                - master
 #                - develop
