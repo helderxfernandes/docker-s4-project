@@ -4,7 +4,7 @@ services:
    php:
       build:
         context: ./php
-        dockerfile: ./php/Dockerfile
+        #dockerfile: ./php/Dockerfile
       ports:
          - "8000:80"
       volumes:
