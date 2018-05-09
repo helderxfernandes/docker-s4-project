@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "php",
-      "image": "php:7.2-apache",
+      "image": "internations/test:latest",
       "essential": true,
       "memory": 128,
       "mountPoints": [
