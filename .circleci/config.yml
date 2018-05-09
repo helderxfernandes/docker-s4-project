@@ -28,8 +28,9 @@ jobs:
           name: Verify if application is responding via HTTP
           command: |
             curl http://localhost:8000
-      # build and push Docker image
-      - run: |
+      - run:
+          name: build and push Docker image
+          command: |
             TAG=0.1.$CIRCLE_BUILD_NUM
             docker build -t   internations/test:$TAG .
             docker login -u $DOCKER_USER -p $DOCKER_PASS
