@@ -36,7 +36,7 @@ jobs:
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker push internations/test:$TAG
 #            cd ~/.docker
-#            cat config.json 
+#            cat config.json
 
   deploy:
     machine:
@@ -59,10 +59,10 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
-#      - deploy:
-#          filters:
-#            branches:
-#              only:
-#                - master
+#      - build
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
 #                - develop
