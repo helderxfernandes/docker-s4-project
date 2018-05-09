@@ -3,7 +3,8 @@ version: '2'
 services:
    php:
       build:
-        context: ./php  
+        context: ./php
+        dockerfile: ./php/Dockerfile
       ports:
          - "8000:80"
       volumes:
