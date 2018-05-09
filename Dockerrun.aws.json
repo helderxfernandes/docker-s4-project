@@ -10,7 +10,7 @@
   ],
   "Authentication": {
     "Bucket": "internations-docker",
-    "Key": ".dockercfg.json"
+    "Key": ".dockercfg"
   },
   "containerDefinitions": [
     {
