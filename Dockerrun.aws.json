@@ -8,6 +8,10 @@
       }
     }
   ],
+  "Authentication": {
+    "Bucket": "internations-docker",
+    "Key": ".dockercfg.json"
+  },
   "containerDefinitions": [
     {
       "name": "php",
