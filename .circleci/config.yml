@@ -44,9 +44,10 @@ jobs:
   deploy:
     machine:
       services:
-        - docker
+        docker:
+          - image: internations/test:latest
     steps:
-      - checkout
+#      - checkout
       - run:
           name: Install awscli
           command: |
@@ -64,6 +65,8 @@ workflows:
     jobs:
 #      - build
       - deploy:
+#          requires:
+#            - build
           filters:
             branches:
               only:
