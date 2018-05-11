@@ -58,7 +58,7 @@ jobs:
             sudo pip install awsebcli --upgrade
       - run:
           name: Show current branch
-          command: echo ${CIRCLE_BRANCH}
+          command: echo ${CIRCLE_BRANCH} 
       - run:
           name: Deploy to EB
           command: |
