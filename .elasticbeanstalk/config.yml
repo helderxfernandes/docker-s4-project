@@ -2,7 +2,7 @@ branch-defaults:
   master:
     environment: Demo-env
   staging:
-    environment: Demo-env2
+    environment: Demo-staging
 global:
   application_name: demo
   default_ec2_keyname: null
