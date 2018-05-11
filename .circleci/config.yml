@@ -63,7 +63,7 @@ jobs:
             eb deploy -v
 workflows:
   version: 2
-  build-deploy:
+  deploy-stag:
     jobs:
       - build
       - deploy:
@@ -74,3 +74,16 @@ workflows:
               only:
                 - master
 #                - develop
+  deploy-prod:
+    triggers:
+      - schedule:
+        cron: "0 * * * *"
+        filters:
+          branches:
+            only:
+              - master
+    jobs:
+      - build
+      - deploy:
+        requires:
+          - build
