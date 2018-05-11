@@ -72,7 +72,7 @@ workflows:
           filters:
             branches:
               only:
-                - staging
+                - master
 #  deploy-production:
 #    triggers:
 #      - schedule:
