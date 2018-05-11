@@ -74,16 +74,16 @@ workflows:
               only:
                 - master
 #                - develop
-  deploy-prod:
-    triggers:
-      - schedule:
-        cron: "0 * * * *"
-        filters:
-          branches:
-            only:
-              - master
-    jobs:
-      - build
-      - deploy:
-        requires:
-          - build
+#  deploy-prod:
+#    triggers:
+#      - schedule:
+#        cron: "0 * * * *"
+#        filters:
+#          branches:
+#            only:
+#              - master
+#    jobs:
+#      - build
+#      - deploy:
+#        requires:
+#         - build
