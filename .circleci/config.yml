@@ -16,18 +16,28 @@ jobs:
 #      - run:
 #          name: Docker info
 #          command: docker info
-#      - run:
-#          name: Run Docker
-#          command: docker-compose up --build -d
+      - run:
+          name: Run Docker
+          command: docker-compose up --build -d
 #      - run:
 #          name: Check if Docker is running
 #          command: |
 #            docker images
 #            docker container ls
-#      - run:
-#          name: Verify if application is responding via HTTP
-#          command: |
-#            curl http://localhost:8000
+      - run:
+          name: Verify if application is responding via HTTP
+          command: |
+            curl http://localhost:8000
+
+#   test:
+#      override:
+#        -phpunit
+  deploy:
+    machine:
+      services:
+        - docker
+    steps:
+      - checkout
       - run:
           name: build and push Docker image
           command: |
@@ -40,13 +50,6 @@ jobs:
 #            docker build -t internations/test:$TAG ./php/
 #            cd ~/.docker
 #            cat config.json
-
-  deploy:
-    machine:
-      services:
-        - docker
-    steps:
-      - checkout
       - run:
           name: Install awscli
           command: |
