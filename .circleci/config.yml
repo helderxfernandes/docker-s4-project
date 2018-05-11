@@ -60,15 +60,16 @@ jobs:
           name: Deploy to EB
           command: |
             bash ./.elasticbeanstalk/setup-eb.sh
-            eb deploy -v Demo-${CIRCLE_BRANCH}
+          # eb deploy -v Demo-${CIRCLE_BRANCH}
+            eb deploy -v
 workflows:
   version: 2
   deploy-staging:
     jobs:
-      - build
+#      - build
       - deploy:
-          requires:
-            - build
+#          requires:
+#            - build
           filters:
             branches:
               only:
