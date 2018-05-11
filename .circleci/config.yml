@@ -57,10 +57,14 @@ jobs:
             sudo apt-get install -y python-pip python-dev
             sudo pip install awsebcli --upgrade
       - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - run:
           name: Deploy to EB
           command: |
             bash ./.elasticbeanstalk/setup-eb.sh
-            eb deploy -v
+          #  eb deploy -v
+            eb deploy -v ${CIRCLE_BRANCH}-my-application
 workflows:
   version: 2
   deploy-stag:
@@ -72,8 +76,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
-#                - develop
+                - staging
 #  deploy-prod:
 #    triggers:
 #      - schedule:
