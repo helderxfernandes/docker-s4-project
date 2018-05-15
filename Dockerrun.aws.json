@@ -15,7 +15,7 @@
   "containerDefinitions": [
     {
       "name": "php",
-      "image": "internations/test:latest",
+      "image": "internations/test:$CIRCLE_BUILD_NUM",
       "essential": true,
       "memory": 128,
       "mountPoints": [

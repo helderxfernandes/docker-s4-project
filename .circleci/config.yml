@@ -41,9 +41,9 @@ jobs:
       - run:
           name: build and push Docker image
           command: |
-            docker build -t internations/test ./php/
+            docker build -t internations/test:$CIRCLE_BUILD_NUM ./php/
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker push internations/test
+            docker push internations/test:$CIRCLE_BUILD_NUM
 #            TAG=0.1.$CIRCLE_BUILD_NUM
 #            docker push internations/test:$TAG
 #            docker login -u $DOCKER_USER -p $DOCKER_PASS
