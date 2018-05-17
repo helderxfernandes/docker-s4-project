@@ -10,11 +10,17 @@ jobs:
         - docker
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true # default - false
+      - restore_cache:
+            key: app-{{ checksum "package.json" }}
+            paths:
+              - ~/docker-cache/
       - run:
           name: Run Docker
           command: docker-compose up --build -d
+      - save_cache:
+          key: app-{{ checksum "package.json" }}
+          paths:
+            - ~/docker-cache/
       - run:
           name: Verify if application is responding via HTTP
           command: |
