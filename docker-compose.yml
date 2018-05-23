@@ -1,11 +1,24 @@
 version: '2'
 
 services:
-   php:
-      build:
-        context: ./php
-        #dockerfile: ./php/Dockerfile
-      ports:
-         - "8000:80"
-      volumes:
-         - ./html/:/var/www/html
+  php:
+    build:
+      context: ./php
+      #dockerfile: ./php/Dockerfile
+    ports:
+       - "8000:80"
+    volumes:
+       - ./html/:/var/www/html
+    depends_on:
+      - db-dev
+  db-dev:
+    build:
+      context: ./db-dev
+    ports:
+      - "5432:5432"
+    volumes:
+       - ./html/:/var/www/html
+  admin:
+    image: adminer
+    ports:
+      - "8080:8080"

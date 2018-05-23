@@ -26,7 +26,7 @@ class __TwigTemplate_ddd6748effcf5e1395090710683b106e6e64cc75303ecc70cb2ca527335
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "hello_page.html.twig"));
 
         // line 1
-        echo "WORKS!
+        echo "WORKS! yeaaahhhh
 <br>
 <br>
 Docker + Symfony 4 + Circle CI";
@@ -50,7 +50,7 @@ Docker + Symfony 4 + Circle CI";
 
     public function getSourceContext()
     {
-        return new Twig_Source("WORKS!
+        return new Twig_Source("WORKS! yeaaahhhh
 <br>
 <br>
 Docker + Symfony 4 + Circle CI", "hello_page.html.twig", "/var/www/html/templates/hello_page.html.twig");
