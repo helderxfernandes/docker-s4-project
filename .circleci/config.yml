@@ -2,11 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
-version: 2
+version: 234
 jobs:
   build:
     machine:
-      services1:
+      services:
         - docker
     steps:
       - checkout
