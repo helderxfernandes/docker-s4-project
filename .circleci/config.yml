@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    machine:
+    machine2:
       services:
         - docker
     steps:
